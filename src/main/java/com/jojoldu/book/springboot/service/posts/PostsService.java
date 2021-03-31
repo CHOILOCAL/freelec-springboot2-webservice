@@ -21,6 +21,7 @@ public class PostsService {
 
     private final PostsRepository postsRepository;
 
+    // dto를 save하는데 .getId()를 꺼내는 이유는 ???
     @Transactional
     public Long save(PostsSaveRequestDto requestDto) {
         return postsRepository.save(requestDto.toEntity()).getId();

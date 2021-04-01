@@ -51,4 +51,7 @@ com.jojoldu.book.springboot.web.PostsApiControllerTest > Posts_?섏젙?쒕떎 FA
             Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException
 
 ### test code 제외 빌드 성공
-### ./gradlew clean bootJar
+-> ./gradlew clean bootJar
+
+### H2 DB entity 자동 DDL 안되는 현상
+-> JDBC URL 변경 : jdbc:h2:mem:testdb

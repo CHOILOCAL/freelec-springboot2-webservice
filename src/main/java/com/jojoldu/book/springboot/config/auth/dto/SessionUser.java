@@ -7,6 +7,9 @@ import java.io.Serializable;
 
 @Getter
 public class SessionUser implements Serializable {
+    
+    // 직렬화 기능을 가진 Dto 생성
+    
     private String name;
     private String email;
     private String picture;

@@ -30,7 +30,7 @@ public class HelloControllerTest {
 
     @WithMockUser(roles="USER")
     @Test
-    public void hello가_리턴된다() throws Exception {
+    public void hello가_return() throws Exception {
         String hello = "hello";
 
         mvc.perform(get("/hello"))
@@ -40,7 +40,7 @@ public class HelloControllerTest {
 
     @WithMockUser(roles="USER")
     @Test
-    public void helloDto가_리턴된다() throws Exception {
+    public void helloDto가_return() throws Exception {
         String name = "hello";
         int amount = 1000;
 

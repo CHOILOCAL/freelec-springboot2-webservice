@@ -27,7 +27,7 @@ public class PostsRepositoryTest {
     }
 
     @Test
-    public void 게시글저장_불러오기() {
+    public void select_posts() {
 
         String title = "test title";
         String content = "test content";

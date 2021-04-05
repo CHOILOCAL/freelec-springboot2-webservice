@@ -55,6 +55,12 @@ com.jojoldu.book.springboot.web.PostsApiControllerTest > Posts_?섏젙?쒕떎 FA
 
 ### git 모든 cashe 삭제 후 재 push (저장소 초기화)
 -> './gradlew test' 성공
+1. git bash 실행
+2. git rm -r . --cached
+3. git status
+4. git add --all
+5. git commit -m "apply gitignore"
+6. git push origin master
 
 ### H2 DB entity 자동 DDL 안되는 현상
 -> JDBC URL 변경 : jdbc:h2:mem:testdb

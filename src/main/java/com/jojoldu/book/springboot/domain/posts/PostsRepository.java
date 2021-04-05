@@ -11,5 +11,4 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
     List<Posts> findAllDesc();
 
 
-
 }

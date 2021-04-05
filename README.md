@@ -50,8 +50,11 @@ com.jojoldu.book.springboot.web.PostsApiControllerTest > Posts_?섏젙?쒕떎 FA
         Caused by: org.springframework.beans.factory.BeanDefinitionStoreException
             Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException
 
-### test code 제외 빌드 성공
--> ./gradlew clean bootJar
+### <> test code 제외 빌드
+-> './gradlew clean bootJar'
+
+### git 모든 cashe 삭제 후 재 push (저장소 초기화)
+-> './gradlew test' 성공
 
 ### H2 DB entity 자동 DDL 안되는 현상
 -> JDBC URL 변경 : jdbc:h2:mem:testdb
